@@ -6,6 +6,20 @@
     <title>Dom 실습3</title>
 </head>
 <body>
+    <h1>이미지 속성 변경</h1>
+    <img id = "image" alt = "이미지가 여기에 표시됩니다.">
+    <br><br>
+    <button id = "imagebutton">이미지 보이기</button>
+
+    <script>
+        var image = document.getElementById("image")
+        var btn = document.getElementById("imagebutton")
+        btn.onclick = function() {
+            image.src = "https://placehold.co/300x200";
+            image.width = 300;
+            image.heigth = 200;
+        }
+    </script>
 
 </body>
 </html>
