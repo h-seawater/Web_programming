@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 실습2</title>
+</head>
+<body>
+    <h1 id = "title">스타일 변경 예제</h1>
+    <button id = "stylebutton">스타일 바꾸기</button>
+
+    <script>
+        var h1 = document.getElementById("title")
+        var btn = document.getElementById("stylebutton")
+        btn.onclick = function() {
+            h1.style.color = "white";
+            h1.style.backgroundColor = "blue";
+            h1.style.padding = "10px";
+        }
+    </script>
+</body>
+</html>
